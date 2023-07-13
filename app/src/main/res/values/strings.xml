@@ -1,0 +1,38 @@
+<resources>
+
+    <!-- IMC Calculate App -->
+    <string name="app_name">CursoKotlin</string>
+    <string name="male">Hombre</string>
+    <string name="female">Mujer</string>
+    <string name="height">Altura</string>
+    <string name="weight">Peso</string>
+    <string name="age">Edad</string>
+    <string name="calculate">Calcular</string>
+    <string name="textResultado">Tu Resultado</string>
+    <string name="recalculate">Re-Calcular</string>
+
+    <string name="error">Error</string>
+
+    <string name="title_bajo_peso">Bajo Peso</string>
+    <string name="description_bajo_peso">Estás por debajo del peso óptimo</string>
+
+    <string name="title_normal_peso">Normal</string>
+    <string name="description_normal_peso">Estás en el peso óptimo</string>
+
+    <string name="title_sobrepeso">Sobrepeso</string>
+    <string name="description_sobrepeso">Estás por encima del peso óptimo</string>
+
+    <string name="title_obesidad">Obesidad</string>
+    <string name="description_obesidad">Estás Muy por encima del peso óptimo</string>
+
+<!-- TodoApp -->
+    <string name="todo_title">Bienvenido, Pau</string>
+    <string name="todo_categories">Categorías</string>
+    <string name="todo_tareas">Tareas</string>
+    <string name="todo_hint">Añade la Tarea</string>
+    <string name="todo_negocios">Negocios</string>
+    <string name="todo_personal">Personal</string>
+    <string name="todo_other">Otros</string>
+    <string name="todo_bt_create">Crear Tarea</string>
+
+</resources>

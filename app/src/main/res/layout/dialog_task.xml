@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:background="@color/background_todoapp"
+    android:orientation="vertical"
+    android:padding="16dp"
+    >
+
+    <EditText
+        android:id="@+id/etTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:hint="@string/todo_hint"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <RadioGroup
+        android:id="@+id/rgCategories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbBusiness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/business_category"
+            android:checked="true"
+            android:text="@string/todo_negocios"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+        <RadioButton
+            android:id="@+id/rbPersonal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/personal_category"
+            android:text="@string/todo_personal"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+        <RadioButton
+            android:id="@+id/rbOther"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/other_category"
+            android:text="@string/todo_other"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btAddTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/accent"
+        android:text="@string/todo_bt_create" />
+
+
+</LinearLayout>
