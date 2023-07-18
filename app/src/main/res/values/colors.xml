@@ -34,4 +34,7 @@
     <color name="personal_category">#00BCD4</color>
     <color name="other_category">#4CAF50</color>
 
+    <!-- SuperHero App -->
+    <color name="superhero_item_name">#73673AB7</color>
+
 </resources>

@@ -7,6 +7,7 @@ import android.widget.Button
 import com.pauortegarcia.cursokotlin.databinding.ActivityMenuBinding
 import com.pauortegarcia.cursokotlin.firstapp.FirstAppActivity
 import com.pauortegarcia.cursokotlin.imccalculator.IMCAppActivity
+import com.pauortegarcia.cursokotlin.superheroapp.SuperHeroListActivity
 import com.pauortegarcia.cursokotlin.todoapp.TodoActivity
 
 class MenuActivity : AppCompatActivity() {
@@ -24,6 +25,12 @@ class MenuActivity : AppCompatActivity() {
         binding.btnSaludApp.setOnClickListener { navegateToSaludApp() }
         binding.btnIMCApp.setOnClickListener { navegateToIMCApp() }
         binding.btnTodo.setOnClickListener { navegateToTodoApp() }
+        binding.btnSuperHeroApp.setOnClickListener { navegateToSuperHeroApp() }
+    }
+
+    private fun navegateToSuperHeroApp() {
+        val intent = Intent(this, SuperHeroListActivity::class.java )
+        startActivity(intent)
     }
 
 

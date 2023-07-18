@@ -1,5 +1,13 @@
 <resources>
 
+
+    <!-- Menu -->
+
+    <string name="salud_app_menu">Salud APP</string>
+    <string name="imc_app_menu">IMC APP</string>
+    <string name="todo_app_menu">TODO APP</string>
+    <string name="super_hero_app_menu">SuperHero APP</string>
+
     <!-- IMC Calculate App -->
     <string name="app_name">CursoKotlin</string>
     <string name="male">Hombre</string>
@@ -25,7 +33,7 @@
     <string name="title_obesidad">Obesidad</string>
     <string name="description_obesidad">Estás Muy por encima del peso óptimo</string>
 
-<!-- TodoApp -->
+    <!-- TodoApp -->
     <string name="todo_title">Bienvenido, Pau</string>
     <string name="todo_categories">Categorías</string>
     <string name="todo_tareas">Tareas</string>
@@ -34,5 +42,8 @@
     <string name="todo_personal">Personal</string>
     <string name="todo_other">Otros</string>
     <string name="todo_bt_create">Crear Tarea</string>
+
+
+
 
 </resources>
