@@ -1,5 +1,6 @@
 package com.pauortegarcia.cursokotlin.superheroapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -7,6 +8,7 @@ import androidx.appcompat.widget.SearchView
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.pauortegarcia.cursokotlin.databinding.ActivitySuperHeroListBinding
+import com.pauortegarcia.cursokotlin.superheroapp.DetailSuperHeroActivity.Companion.DETAILS_ID
 import okhttp3.Dispatcher
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -38,7 +40,7 @@ class SuperHeroListActivity : AppCompatActivity() {
             override fun onQueryTextChange(newText: String?) = false
         })
 
-        adapter = SuperheroAdapter()
+        adapter = SuperheroAdapter{navigateToDetail(it)}
         binding.rvSuperHero.setHasFixedSize(true)
         binding.rvSuperHero.layoutManager = LinearLayoutManager(this)
         binding.rvSuperHero.adapter = adapter
@@ -75,6 +77,12 @@ class SuperHeroListActivity : AppCompatActivity() {
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 
+    }
+
+    private fun navigateToDetail(id:String) {
+        val intent = Intent(this, DetailSuperHeroActivity::class.java)
+        intent.putExtra(DETAILS_ID, id)
+        startActivity(intent)
     }
 
 

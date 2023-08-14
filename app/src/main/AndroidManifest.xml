@@ -15,6 +15,9 @@
         android:theme="@style/Theme.CursoKotlin"
         tools:targetApi="31">
         <activity
+            android:name=".superheroapp.DetailSuperHeroActivity"
+            android:exported="false" />
+        <activity
             android:name=".superheroapp.SuperHeroListActivity"
             android:exported="false" />
         <activity
